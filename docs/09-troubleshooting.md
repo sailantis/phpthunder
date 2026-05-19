@@ -6,9 +6,9 @@ This page collects the support checks that usually resolve setup and runtime iss
 
 | Symptom                                 | Fix                                                                                |
 | --------------------------------------- | ---------------------------------------------------------------------------------- |
-| Completion or hover is missing          | Run `PhpThunder: Reindex Project`                                                  |
+| Completion or hover is missing          | Run `PhpThunder: Reindex Workspace`                                                  |
 | Wrong diagnostics for language features | Run `PhpThunder: Select PHP Version` and choose the project level                  |
-| Vendor symbols are missing              | Run `composer install`, then `PhpThunder: Reindex Project`                         |
+| Vendor symbols are missing              | Run `composer install`, then `PhpThunder: Reindex Workspace`                         |
 | Tests do not appear in Test Explorer    | Confirm `vendor/bin/phpunit` or `vendor/bin/pest` exists, then reindex the project |
 
 If the quick wins do not help, use the more specific sections below.
@@ -18,7 +18,7 @@ If the quick wins do not help, use the more specific sections below.
 Completion, hover, references, and renamed files can lag behind after a structural change.
 
 1. Save the affected files.
-2. Run `PhpThunder: Reindex Project`.
+2. Run `PhpThunder: Reindex Workspace`.
 3. Wait for the scan to finish; the status bar shows progress.
 
 This is especially important after large refactors, Composer operations, or include-path changes. Most single-file edits are picked up automatically; reindex is for changes that affect the whole project graph.
@@ -54,7 +54,7 @@ When third-party classes show as undefined, work through this checklist:
 - Run `composer install` and confirm `vendor/` is populated.
 - Open the project root, meaning the folder that contains `composer.json`.
 - Check `phpThunder.includePaths` for any non-standard source directories the project depends on.
-- Run `PhpThunder: Composer Dump Autoload` or `PhpThunder: Reindex Project` after autoload changes.
+- Run `PhpThunder: Composer Dump Autoload` or `PhpThunder: Reindex Workspace` after autoload changes.
 
 > **Note:** `phpThunder.diagnostics.enableVendor` is off by default, so vendor files intentionally do not behave like first-party code unless that setting is enabled.
 
@@ -80,7 +80,7 @@ Debugging, tests, or Composer commands can use the wrong interpreter when the wo
 
 After changing `phpThunder.includePaths`, the indexing graph needs a refresh.
 
-- Run `PhpThunder: Reindex Project`, or
+- Run `PhpThunder: Reindex Workspace`, or
 - Reload the VS Code window with `Developer: Reload Window`
 
 ## Debugging does not start or breakpoints do not bind

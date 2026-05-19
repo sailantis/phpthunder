@@ -70,7 +70,7 @@ Use `auto` unless the project has an unusual layout or a specific runner must be
 
 - Open the **project root** — the folder that contains `composer.json` — not a nested subfolder.
 - Run `composer install` before opening the project so `vendor/bin/phpunit` and `vendor/bin/pest` exist.
-- Reindex the project after major structural changes (`PhpThunder: Reindex Project`).
+- Reindex the project after major structural changes (`PhpThunder: Reindex Workspace`).
 - Keep the PHP version setting aligned with what the project actually targets to avoid false diagnostics in test files.
 
 ## When tests don't appear

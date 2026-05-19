@@ -41,13 +41,13 @@ Useful commands:
 
 **When to change:** Most projects work fine with `auto`. Set `projectPhar` when the project ships its own `composer.phar` under a `tools/` or `build/` folder. Use `includePaths` for legacy codebases, internal SDKs, or monorepo packages that aren't registered in `composer.json`.
 
-> **Important:** After changing `includePaths`, run `PhpThunder: Reindex Project` or reload the window. Include-path changes are not picked up automatically.
+> **Important:** After changing `includePaths`, run `PhpThunder: Reindex Workspace` or reload the window. Include-path changes are not picked up automatically.
 
 Useful commands:
 
 - `PhpThunder: Configure Composer`
 - `PhpThunder: Configure Include Paths`
-- `PhpThunder: Reindex Project`
+- `PhpThunder: Reindex Workspace`
 
 ### Completion behavior
 
@@ -205,7 +205,7 @@ More specific style rules and extra source paths:
 
 The commands you reach for most often after configuration changes:
 
-- `PhpThunder: Reindex Project` — rebuild the project index
+- `PhpThunder: Reindex Workspace` — rebuild the project index
 - `PhpThunder: Configure PHP Interpreters` — add or switch interpreters
 - `PhpThunder: Configure Composer` — update Composer resolution strategy
 - `PhpThunder: Configure Include Paths` — add extra source directories

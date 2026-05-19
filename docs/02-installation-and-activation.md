@@ -33,7 +33,7 @@ PhpThunder exposes dedicated commands for project infrastructure:
 
 `phpThunder.composer.mode` controls how Composer is resolved. `auto` looks for a project-local `composer.phar` first, then `composer` on `PATH`, then the custom binary configured in the settings panel.
 
-`phpThunder.includePaths` accepts additional directories to index. Paths from the global, workspace, and folder scopes are merged for each project. After changing include paths, run `PhpThunder: Reindex Project` or reload the VS Code window.
+`phpThunder.includePaths` accepts additional directories to index. Paths from the global, workspace, and folder scopes are merged for each project. After changing include paths, run `PhpThunder: Reindex Workspace` or reload the VS Code window.
 
 ## Activate a trial or Pro license
 

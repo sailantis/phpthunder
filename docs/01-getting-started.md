@@ -22,7 +22,7 @@ Follow these steps the first time a PHP project is opened with PhpThunder:
 3. Run `PhpThunder: Select PHP Version` and choose the version the project targets.
 4. Run `PhpThunder: Configure PHP Interpreters` when a specific PHP binary is needed. If the system `php` is already correct, this step can wait.
 5. Open a PHP file and let the initial scan finish.
-6. Run `PhpThunder: Reindex Project` after Composer, include-path, or workspace-structure changes.
+6. Run `PhpThunder: Reindex Workspace` after Composer, include-path, or workspace-structure changes.
 
 > **Tip:** When the project uses Composer, run `composer install` before opening the folder so `vendor/` symbols are available from the first scan.
 
@@ -37,23 +37,23 @@ Once the initial index is complete, the editor should show:
 - **Completion** for classes, functions, constants, members, imported namespaces, and PHPDoc-backed types such as templates, array shapes, aliases, and callback parameters
 - **Hover documentation** for symbols and inferred types, including PHPDoc from dependencies and higher-order callback inference
 - **Diagnostics** for syntax errors, type mismatches, array-shape key issues, and selected PHPDoc issues
-- **Import assistance** that suggests and inserts `use` statements for unresolved short names
-- **Test Explorer entries** when PHPUnit or Pest tests exist in the standard locations
-- **A status-bar entry** showing the current access state (Free, Trial, or Pro)
+ - **Import assistance** that suggests and inserts `use` statements for unresolved short names
+ - **Test Explorer entries** when PHPUnit or Pest tests exist in the standard locations
+ - **Toto treeview** that displays project-specific Toto items and related quick actions
+ - **A status-bar entry** showing the current access state (Free, Trial, or Pro)
 
-If anything is missing, a quick `PhpThunder: Reindex Project` resolves most first-run surprises.
 
 ## Commands worth memorizing
 
 - `PhpThunder: Select PHP Version` — sets the language level for the current folder
 - `PhpThunder: Configure PHP Interpreters` — adds and manages PHP binaries
-- `PhpThunder: Reindex Project` — rebuilds the project index after structural changes
+- `PhpThunder: Reindex Workspace` — rebuilds the project index after structural changes
 
 For the detailed setup path, including Composer, include paths, and licensing, see [Installation and activation](02-installation-and-activation.md).
 
 ## When to reindex
 
-Run `PhpThunder: Reindex Project` after:
+Run `PhpThunder: Reindex Workspace` after:
 
 - running `composer install` or `composer update`
 - adding or changing `phpThunder.includePaths`
