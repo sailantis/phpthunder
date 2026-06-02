@@ -22,13 +22,11 @@ Follow these steps the first time a PHP project is opened with PhpThunder:
 3. Run `PhpThunder: Select PHP Version` and choose the version the project targets.
 4. Run `PhpThunder: Configure PHP Interpreters` when a specific PHP binary is needed. If the system `php` is already correct, this step can wait.
 5. Open a PHP file and let the initial scan finish.
-6. Run `PhpThunder: Reindex Workspace` after Composer, include-path, or workspace-structure changes.
+6. Run `PhpThunder: Reindex Workspace` if you encounter issues after making changes via Composer, or regarding include path settings or the workspace structure in general.
 
 > **Tip:** When the project uses Composer, run `composer install` before opening the folder so `vendor/` symbols are available from the first scan.
 
-<!-- MEDIA: GIF showing completion and hover in a PHP file after first setup -->
-
-> 📸 _Coming soon: a short GIF showing completion and hover in action on a real project._
+![Completion and hover in action](assets/screenshots/autocomplete.gif)
 
 ## What should appear
 
@@ -39,7 +37,7 @@ Once the initial index is complete, the editor should show:
 - **Diagnostics** for syntax errors, type mismatches, array-shape key issues, and selected PHPDoc issues
  - **Import assistance** that suggests and inserts `use` statements for unresolved short names
  - **Test Explorer entries** when PHPUnit or Pest tests exist in the standard locations
- - **Toto treeview** that displays project-specific Toto items and related quick actions
+ - **Todo treeview** that displays project-specific Todo items and related quick actions
  - **A status-bar entry** showing the current access state (Free, Trial, or Pro)
 
 

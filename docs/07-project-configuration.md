@@ -23,6 +23,7 @@ These settings drive code analysis: what PHP version to target, which PHP binary
 | `phpThunder.phpVersion`        | Sets the PHP language level for the current folder. Affects diagnostics, feature checks, and type analysis. |
 | `phpThunder.activeInterpreter` | Selects the active interpreter by name from the PhpThunder catalog.                                         |
 | `phpThunder.interpreters`      | Machine-scoped catalog of PHP binaries. Managed by the PhpThunder settings UI — don't edit this by hand.    |
+| `phpThunder.shortOpenTag`      | Allow PHP short open tags (`<?`) in addition to `<?php` and `<?=`. Matches `short_open_tag` in `php.ini`. Disabled by default. |
 
 **When to change:** Set `phpThunder.phpVersion` as soon as you open a project. Getting this right prevents false-positive diagnostics about language features. Use `phpThunder.activeInterpreter` to pin a workspace to a specific binary when your machine has multiple PHP versions.
 
@@ -61,7 +62,9 @@ Useful commands:
 
 ## Formatting
 
-PhpThunder's formatter is conservative by default — it preserves whatever layout is already there. Change these settings when the project should enforce a consistent style.
+PhpThunder formats PHP files as PSR-12 by default. Standard VS Code editor settings and `.editorconfig` files are honored in all tiers — no license required.
+
+The `phpThunder.formatting.*` customization settings below require a Pro license or an active trial. Most style options default to `preserve`, so they don't change existing style unless explicitly configured.
 
 ### Layout settings
 
@@ -102,6 +105,36 @@ These accept `preserve`, `force-braces`, or `force-alternative`:
 | `phpThunder.formatting.maxInlineWidth` | `80`    | Line width at which `auto` layout mode breaks a single-line construct into multiple lines. |
 
 **When to change:** Set `maxInlineWidth` to match the project's line-length rule (120, 100, etc.) and use `auto` for arrays and parameters to get consistent automatic breaking.
+
+### Additional formatting settings
+
+#### Spacing
+
+| Setting                                        | Default     | What it controls                                                             |
+| ---------------------------------------------- | ----------- | ---------------------------------------------------------------------------- |
+| `phpThunder.formatting.spaceAfterCast`         | `never`     | Space after cast operators: `(int)$x` vs `(int) $x`. Options: `never`, `always`, `preserve`. |
+| `phpThunder.formatting.spaceBeforeDeclParens`       | `never`   | Space before `(` in function/method declarations: `function foo($x)` vs `function foo ($x)`. Options: `never`, `always`, `preserve`. |
+| `phpThunder.formatting.spaceBeforeCallParens`       | `never`   | Space before `(` in function/method calls: `foo($x)` vs `foo ($x)`. Options: `never`, `always`, `preserve`. |
+| `phpThunder.formatting.spaceBeforeCFParens` | `always` | Space before `(` in control-flow headers such as `if`, `foreach`, `for`, `while`, and `switch`. Options: `never`, `always`, `preserve`. |
+| `phpThunder.formatting.spacesInsideDeclParens` | `never`     | Spaces inside parentheses in function/method *declarations*. Options: `never`, `always`, `preserve`. |
+| `phpThunder.formatting.spacesInsideCallParens` | `never`     | Spaces inside parentheses in function/method *call* argument lists. Options: `never`, `always`, `preserve`. |
+| `phpThunder.formatting.spacesInsideCFParens` | `never`     | Spaces inside parentheses in control-flow statements. Options: `never`, `always`, `preserve`. |
+| `phpThunder.formatting.spaceAfterComma`        | `always`    | Space after commas in inline (single-line) lists. Options: `always`, `never`, `preserve`. |
+| `phpThunder.formatting.spaceAfterDoubleSlash`  | `preserve`  | Space after `//` in line comments. Options: `preserve`, `always`, `never`. |
+| `phpThunder.formatting.spaceBeforeReturnTypeColon` | `false` | Insert a space before the `:` of a return type hint: `): void` vs `) : void`. |
+
+#### Syntax style
+
+| Setting                                          | Default      | What it controls                                                              |
+| ------------------------------------------------ | ------------ | ----------------------------------------------------------------------------- |
+| `phpThunder.formatting.trailingCommaMultilineArrays` | `preserve` | Trailing comma in multi-line array literals. Options: `preserve`, `add`, `remove`. |
+| `phpThunder.formatting.trailingCommaMultilineArgs`   | `preserve` | Trailing comma in multi-line call argument lists. Options: `preserve`, `add`, `remove`. |
+| `phpThunder.formatting.classBracePosition`       | `new-line`   | Opening `{` of a class, trait, or enum. Options: `new-line` (PSR-12), `same-line` (K&R), `preserve`. |
+| `phpThunder.formatting.functionBracePosition`    | `new-line`   | Opening `{` of a function or method. Options: `new-line` (PSR-12), `same-line`, `preserve`. |
+| `phpThunder.formatting.namespaceBracePosition`   | `new-line`   | Opening `{` of a bracketed namespace. Options: `new-line`, `same-line`, `preserve`. |
+| `phpThunder.formatting.elseOnNewLine`            | `false`      | Place `else`/`elseif` on a new line instead of following the closing brace. |
+| `phpThunder.formatting.returnTypePosition`       | `same-line`  | Return type hint placement. Options: `same-line`, `new-line`. |
+| `phpThunder.formatting.maxConsecutiveBlankLines` | `1`          | Max consecutive blank lines between statements. Options: `preserve`, `0`, `1`, `2`, `3`. |
 
 ---
 
@@ -150,7 +183,7 @@ These accept `preserve`, `force-braces`, or `force-alternative`:
 
 | Setting                                 | Default    | What it does                                                           |
 | --------------------------------------- | ---------- | ---------------------------------------------------------------------- |
-| `phpThunder.profiling.webPort`          | `8000`     | HTTP port for the local web profiling server (Pro).                    |
+| `phpThunder.profiling.webPort`          | `8190`     | HTTP port for the local web profiling server (Pro).                    |
 | `phpThunder.profiling.docRoot`          | `"public"` | Document root for web profiling, relative to the workspace root (Pro). |
 | `phpThunder.debug.inlineValues.enabled` | `true`     | Show variable values inline while a debug session is paused (Pro).     |
 | `phpThunder.trace.server`               | `off`      | LSP communication tracing: `off`, `messages`, or `verbose`.            |
@@ -193,7 +226,7 @@ More specific style rules and extra source paths:
   "phpThunder.formatting.arguments": "auto",
   "phpThunder.formatting.ifSyntax": "force-braces",
   "phpThunder.formatting.maxInlineWidth": 120,
-  "phpThunder.profiling.webPort": 8000,
+  "phpThunder.profiling.webPort": 8190,
   "phpThunder.profiling.docRoot": "public",
   "phpThunder.trace.server": "off"
 }

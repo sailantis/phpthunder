@@ -9,7 +9,7 @@ PhpThunder is first and foremost an editing toolchain. This page covers the work
 | Code intelligence            | Completion, hover, go-to-definition, find references, import suggestions, and PHPDoc-aware inference |
 | Diagnostics                  | Parse errors, type problems, version mismatches, array-shape key issues, unused code                 |
 | Quick fixes & source actions | Organize imports, generate PHPDoc, add use statements, remove dead code                              |
-| Formatting                   | Configurable style for arrays, parameters, control structures, and more                              |
+| Formatting                   | PSR-12 by default; EditorConfig and VS Code settings honored; Pro adds style customization           |
 | TODO panel                   | Track and navigate `TODO`, `FIXME`, and similar comments project-wide                                |
 | Composer helpers             | Run install, update, require, and dump-autoload from the command palette                             |
 
@@ -25,9 +25,7 @@ PhpThunder also understands PHPDoc templates, array shapes, callable signatures,
 
 > **Example:** Start typing `new Http` in a Laravel project and PhpThunder completes to `Illuminate\Http\Request`, adding the `use` statement at the top of the file if it's not already there.
 
-<!-- MEDIA: GIF of completion with auto-import in a controller -->
-
-> 📸 _Coming soon: GIF of completion and auto-import in a real controller._
+![Completion with auto-import](assets/screenshots/autocomplete.gif)
 
 ### Hover
 
@@ -35,9 +33,7 @@ Hover over any symbol to see its type signature, return type, parameters, and PH
 
 Hover also reflects alias-expanded PHPDoc types and inferred callback parameter types, so higher-order code keeps the same type detail as direct member access.
 
-<!-- MEDIA: screenshot of hover showing type + PHPDoc -->
-
-> 📸 _Coming soon: screenshot of hover documentation on a method._
+![Hover documentation on a method](assets/screenshots/hover.gif)
 
 ### Go to definition and find references
 
@@ -74,9 +70,7 @@ Quick fixes and source actions are available from the lightbulb (💡) or via `C
 
 `F2` on any symbol triggers a workspace-wide rename that updates every reference: the declaration, all usages, and any qualified references in other files.
 
-<!-- MEDIA: screenshot of rename preview with changed files listed -->
-
-> 📸 _Coming soon: screenshot of the rename preview dialog._
+![Renaming a class](assets/screenshots/rename-a-class.gif)
 
 ## Code generation (Pro)
 
@@ -88,36 +82,45 @@ PhpThunder can generate boilerplate:
 
 These are available as quick fixes (💡) directly on the class or property.
 
+![Generating abstract methods](assets/screenshots/generate-abstract-methods.gif)
+
 ## Formatting
 
-PhpThunder's formatter is configurable without being opinionated by default. Existing style can be preserved, or a specific layout can be enforced.
+PhpThunder's formatter is always active and produces PSR-12-compliant output out of the box — no configuration required.
 
-Configurable aspects include:
+Standard VS Code editor settings and `.editorconfig` files are recognized in all tiers.
+
+### EditorConfig
+
+When an `.editorconfig` file is present, the formatter walks upward from the file being formatted, collects `.editorconfig` files (stopping at the first `root = true`), and applies the result. `.editorconfig` values take precedence over VS Code settings.
+
+The recognized properties map directly to their VS Code equivalents:
+
+| `.editorconfig` key        | VS Code equivalent             |
+| -------------------------- | ------------------------------ |
+| `indent_style`             | `editor.insertSpaces`          |
+| `indent_size`              | `editor.tabSize`               |
+| `tab_width`                | `editor.tabSize`               |
+| `end_of_line`              | `files.eol`                    |
+| `insert_final_newline`     | `files.insertFinalNewline`     |
+| `trim_trailing_whitespace` | `files.trimTrailingWhitespace` |
+
+Standard EditorConfig glob patterns are supported (`*`, `**`, `?`, character classes, alternation), including anchored patterns starting with `/`. Parsed files are cached and invalidated on change.
+
+> **Tip:** Projects without an `.editorconfig` can configure the same options directly in `settings.json` at the workspace or folder level and get identical behavior.
+
+### Style customization (Pro)
+
+With a Pro license or active trial, additional style rules can be configured via `phpThunder.formatting.*`:
 
 - **Arrays** — preserve as-is, auto-break on width, force single-line, or force multi-line
 - **Parameters and arguments** — same four options for function/method definitions and call sites
 - **Match arms** — formatting for `match` expressions
 - **Control structures** — `if`, `foreach`, `for`, `while`, `switch` — choose between brace-style or alternative syntax
 - **Max inline width** — the threshold at which `auto` mode breaks a single-line construct into multiple lines (default: 80)
+- **Spacing, brace positions, trailing commas, and more**
 
-All formatting settings live under `phpThunder.formatting.*`. See [Project configuration](07-project-configuration.md#formatting) for the full list.
-
-### EditorConfig
-
-PhpThunder's formatter also reads and applies .editorconfig files. The language server walks upward from the file's directory collecting `.editorconfig` files (stopping at the first file with `root = true`) and merges the resulting values with VS Code's formatting options before formatting.
-
-Supported EditorConfig properties (recognized and applied):
-
-- `indent_style` — "tab" or "space", sets whether the formatter uses tabs or spaces.
-- `indent_size` — numeric or "tab", sets the indent size (when "tab" the `tab_width` is used if present).
-- `tab_width` — numeric, controls how many spaces a tab represents and may influence `indent_size`.
-- `end_of_line` — "lf" or "crlf", controls the line-ending sequence used when reformatting.
-- `insert_final_newline` — `true`/`false`, whether a final newline is ensured at EOF.
-- `trim_trailing_whitespace` — `true`/`false`, whether trailing whitespace is removed on formatted lines.
-
-The server supports the usual EditorConfig glob patterns (wildcards `*` and `**`, `?`, character classes `[...]`, and alternation `{a,b}`), and anchored patterns starting with `/` are honored. Parsed .editorconfig files are cached by the server and invalidated when the file size or modification time changes.
-
-When both VS Code/editor settings and `.editorconfig` provide values, the server starts from VS Code's `editor` formatting options and overrides only the fields explicitly set by `.editorconfig`.
+See [Project configuration](07-project-configuration.md#formatting) for the full list of customization settings.
 
 ## TODO workflows
 

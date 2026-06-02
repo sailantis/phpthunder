@@ -11,9 +11,7 @@ Once PhpThunder discovers the tests, the Test Explorer panel organizes them into
 
 A mixed PHPUnit + Pest project works fine — both appear in the same tree.
 
-<!-- MEDIA: screenshot of the Test Explorer showing a mixed PHPUnit/Pest project tree -->
-
-> 📸 _Coming soon: screenshot of the Test Explorer with grouped test results._
+![Test Explorer showing a PHPUnit/Pest project tree](assets/screenshots/test-explorer.gif)
 
 ## Running tests
 

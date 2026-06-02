@@ -117,9 +117,9 @@ When the Test Explorer stays empty or only shows part of the suite, verify:
 
 ## Activation, trial, and license state
 
-PhpThunder offers a free tier, a 30-day Pro trial, and ongoing Pro access. License and trial flows start from `PhpThunder: Activate License`.
+PhpThunder offers a free tier, a 30-day Pro trial, and ongoing Pro access. The trial starts automatically when the extension is first installed.
 
-From the activation page, the available flows are:
+To activate a Pro license, run `PhpThunder: Activate Pro`. From the activation page, the available flows are:
 
 - sign in with a Sailantis account to fetch and activate an existing license
 - enter a license key directly when one is already available
@@ -133,7 +133,7 @@ The status bar entry shows the current access level:
 | `PHP Pro`          | Active Pro license                                                  |
 | `PHP Grace Period` | License recently expired; Pro features remain available temporarily |
 
-If a Pro license lapses, PhpThunder enters Grace Period instead of blocking Pro features immediately. Reactivate or renew from `PhpThunder: Activate License`.
+If a Pro license lapses, PhpThunder enters Grace Period instead of blocking Pro features immediately. Reactivate or renew from `PhpThunder: Activate Pro`.
 
 Plan limits still apply to seats and machine count. For current pricing and plan details, see the [Sailantis website](https://sailantis.com).
 

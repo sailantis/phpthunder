@@ -24,9 +24,7 @@ The debug type for all launch configurations is `phpThunder`.
 
 That is the whole flow for local CLI scripts. Web and remote scenarios add a few more settings but follow the same idea.
 
-<!-- MEDIA: screenshot of a debug session paused at a breakpoint with inline variable values visible -->
-
-> 📸 _Coming soon: screenshot of an active debug session showing inline values and the variable tree._
+![Active debug session with inline values](assets/screenshots/web-debugger.gif)
 
 ## Debug modes
 

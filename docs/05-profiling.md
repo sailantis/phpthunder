@@ -34,9 +34,7 @@ Use `PhpThunder: Profile Current File` for a quick CLI-style profile of whatever
 
 PhpThunder writes a cachegrind file to `.phpthunder/profiles/` and opens the panel for inspection.
 
-<!-- MEDIA: screenshot of the profiler panel showing a call tree / hotspot list -->
-
-> 📸 _Coming soon: screenshot of the profiler panel with call-time breakdown._
+![Profiler panel with call-time breakdown](assets/screenshots/profiler-webview.gif)
 
 ## Start web profiling
 
@@ -67,14 +65,14 @@ PhpThunder also creates a `.gitignore` in that folder automatically so profile a
 
 | Setting                        | Default    | What it controls                                        |
 | ------------------------------ | ---------- | ------------------------------------------------------- |
-| `phpThunder.profiling.webPort` | `8000`     | HTTP port for the local web profiling server            |
+| `phpThunder.profiling.webPort` | `8190`     | HTTP port for the local web profiling server            |
 | `phpThunder.profiling.docRoot` | `"public"` | Document root directory, relative to the workspace root |
 
 Example:
 
 ```json
 {
-  "phpThunder.profiling.webPort": 8000,
+  "phpThunder.profiling.webPort": 8190,
   "phpThunder.profiling.docRoot": "public"
 }
 ```

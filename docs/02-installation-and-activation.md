@@ -35,18 +35,18 @@ PhpThunder exposes dedicated commands for project infrastructure:
 
 `phpThunder.includePaths` accepts additional directories to index. Paths from the global, workspace, and folder scopes are merged for each project. After changing include paths, run `PhpThunder: Reindex Workspace` or reload the VS Code window.
 
-## Activate a trial or Pro license
+## Activate a Pro license
 
-PhpThunder offers a free tier, a 30-day Pro trial, and ongoing Pro access. When Pro workflows are needed, run `PhpThunder: Activate License`.
+PhpThunder offers a free tier, a 30-day Pro trial, and ongoing Pro access. The trial starts automatically when the extension is first installed — no action required.
+
+To activate a Pro license, run `PhpThunder: Activate Pro`.
 
 From the activation page, the flow is:
 
 - sign in with a Sailantis account to fetch and activate an existing license
 - enter a license key directly when one is already available
 
-<!-- MEDIA: screenshot of the activation dialog -->
-
-> 📸 _Coming soon: screenshot of the activation flow._
+![PhpThunder settings panel with activation](assets/screenshots/open-settings-panel.gif)
 
 ### Status bar states
 
@@ -59,7 +59,7 @@ The status bar entry shows the current access level at a glance:
 | `PHP Pro`          | Active Pro license                                                  |
 | `PHP Grace Period` | License recently expired; Pro features remain available temporarily |
 
-If a Pro license lapses, PhpThunder enters Grace Period instead of blocking Pro features immediately. Reactivate or renew from `PhpThunder: Activate License`.
+If a Pro license lapses, PhpThunder enters Grace Period instead of blocking Pro features immediately. Reactivate or renew from `PhpThunder: Activate Pro`.
 
 For the support view of activation edge cases, trial behavior, grace period details, and compatibility notes, see [Troubleshooting](09-troubleshooting.md#activation-trial-and-license-state).
 
@@ -73,7 +73,7 @@ For pricing and plan details, see the [PhpThunder website](https://sailantis.com
 | `PhpThunder: Select PHP Version`         | Set the language level for the current folder |
 | `PhpThunder: Configure Composer`         | Customize Composer binary resolution          |
 | `PhpThunder: Configure Include Paths`    | Add extra source directories to the index     |
-| `PhpThunder: Activate License`           | Start a trial or activate a Pro license       |
+| `PhpThunder: Activate Pro`                      | Activate a Pro license                        |
 
 ## Next steps
 

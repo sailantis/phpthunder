@@ -13,7 +13,7 @@ The full base editing experience — everything in this list is available withou
 - **Code intelligence:** completion, hover, go-to-definition, find references, import suggestions, and PHPDoc-backed inference for templates, array shapes, dynamic return types, magic methods, fluent APIs, aliases, and higher-order callbacks
 - **Diagnostics:** parse errors, type analysis, PHPDoc issues, unused imports, unused private members
 - **Quick fixes and source actions:** organize imports, generate PHPDoc stubs, pick import candidates
-- **Formatting:** all formatting settings for arrays, parameters, control structures, and more
+- **Formatting:** PSR-12 formatter with EditorConfig support and all standard VS Code editor settings (indentation, line endings, final newline, trailing whitespace)
 - **PHPUnit and Pest:** full Test Explorer integration including discovery, run, and debug
 - **Xdebug debugging:** CLI launch, web server launch, and attach mode
 - **Composer helpers:** install, update, require, dump-autoload, validate
@@ -31,6 +31,7 @@ These workflows unlock with Pro access or an active trial:
 | **Generate missing accessors**      | Scans a class and fills in all missing getters and setters in one action.                                                                         |
 | **Implement Missing Methods**       | Generates stubs for all abstract and interface methods a class is required to implement.                                                          |
 | **Pro code fixes (CF diagnostics)** | A set of extra quick fixes beyond the free tier that fix code-quality patterns automatically.                                                     |
+| **Formatting style customization**  | Controls array layout, parameter style, brace positions, spacing, and more via `phpThunder.formatting.*` settings.                               |
 | **Profile Current File**            | Captures a Xdebug cachegrind profile for the active PHP script in one command.                                                                    |
 | **Start Web Profiling**             | Starts a local PHP server with profiling enabled so you can profile real HTTP requests.                                                           |
 | **Open Profiler**                   | Reviews and compares captured cachegrind profiles in a built-in panel.                                                                            |
@@ -44,18 +45,18 @@ Pro also adds **starred completion suggestions** — the strongest match is pre-
 | -------------------------------- | ---- | ----------------------- |
 | Code intelligence & navigation   | ✓    | ✓ + starred suggestions |
 | Diagnostics & basic code actions | ✓    | ✓ + Pro code fixes      |
-| Formatting                       | ✓    | ✓                       |
+| Formatting                       | ✓    | ✓ + style customization |
 | PHPUnit & Pest (Test Explorer)   | ✓    | ✓                       |
 | Xdebug debugging                 | ✓    | ✓ + inline debug values |
 | Composer helpers & TODO tools    | ✓    | ✓                       |
-| Rename Symbol                    | —    | ✓                       |
-| Accessor generation              | —    | ✓                       |
-| Implement Missing Methods        | —    | ✓                       |
-| Profiling (CLI & web)            | —    | ✓                       |
+| Rename Symbol                    |      | ✓                       |
+| Accessor generation              |      | ✓                       |
+| Implement Missing Methods        |      | ✓                       |
+| Profiling (CLI & web)            |      | ✓                       |
 
 ## Trial and activation
 
-PhpThunder offers a **30-day Pro trial** — full access to every Pro feature. The trial is started automatically when you first install the extension.
+PhpThunder offers a **30-day Pro trial** — full access to every Pro feature. The trial starts automatically when you first install the extension. No sign-in or activation step is needed to begin the trial.
 
 The status bar shows your current state:
 
@@ -70,6 +71,6 @@ For pricing plans and subscription details, visit [sailantis.com](https://sailan
 
 ## Related guides
 
-- [Installation and activation](02-installation-and-activation.md) — activate a trial or Pro license
+- [Installation and activation](02-installation-and-activation.md) — activate a Pro license via `PhpThunder: Activate Pro`
 - [Profiling](05-profiling.md) — Pro profiling workflows in detail
 - [Troubleshooting](09-troubleshooting.md) — activation, trial, and compatibility notes
