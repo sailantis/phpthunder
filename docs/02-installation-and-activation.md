@@ -46,10 +46,10 @@ After downloading the `.vsix` file, install it using one of these methods:
 
 ```bash
 # VS Code
-code --install-extension sailantis.phpthunder-<version>-<os-platform>.vsix
+code --install-extension sailantis.phpthunder-<version>-<os>-<platform>.vsix
 
 # VSCodium
-codium --install-extension sailantis.phpthunder-<version>-<os-platform>.vsix
+codium --install-extension sailantis.phpthunder-<version>-<os>-<platform>.vsix
 ```
 
 _The extension activates automatically when a PHP workspace opens and begins its initial project scan._
