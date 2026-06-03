@@ -16,14 +16,14 @@ You can also download the extension directly from the [PhpThunder releases page]
 
 **Available platforms:**
 
-| OS | Platform |
-|----------|------|
-| Windows | x64 |
-| Windows | ARM64 |
-| Linux | x64 |
-| Linux | ARM64 |
-| macOS | x64 (Intel) |
-| macOS | ARM64 (Apple Silicon) |
+| OS | Platform | Platform ID |
+|----------|------|------------------|
+| Windows | x64 | win32-x64 |
+| Windows | arm64 | win32-arm64 |
+| Linux | x64 | linux-x64 |
+| Linux | arm64 | linux-arm64 |
+| macOS | Intel | darwin-x64 |
+| macOS | Apple Silicon | darwin-arm64 |
 
 ### Install from VSIX
 
@@ -46,10 +46,10 @@ After downloading the `.vsix` file, install it using one of these methods:
 
 ```bash
 # VS Code
-code --install-extension sailantis.phpthunder-<version>-<os>-<platform>.vsix
+code --install-extension sailantis.phpthunder-<version>-<platform-id>.vsix
 
 # VSCodium
-codium --install-extension sailantis.phpthunder-<version>-<os>-<platform>.vsix
+codium --install-extension sailantis.phpthunder-<version>-<platform-id>.vsix
 ```
 
 _The extension activates automatically when a PHP workspace opens and begins its initial project scan._
