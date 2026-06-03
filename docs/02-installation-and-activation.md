@@ -4,7 +4,55 @@ This guide covers the full setup path for PhpThunder: installing the extension, 
 
 ## Install the extension
 
+PhpThunder can be installed in two ways:
+
+### Option 1: VS Code Marketplace (Recommended)
+
 Install PhpThunder from the VS Code marketplace. When a PHP workspace opens, the extension activates automatically and begins its initial project scan.
+
+### Option 2: Download from GitHub Releases
+
+You can also download the extension directly from the [PhpThunder releases page](https://github.com/sailantis/phpthunder/releases).
+
+**Available platforms:**
+
+| OS | Platform |
+|----------|------|
+| Windows | x64 |
+| Windows | ARM64 |
+| Linux | x64 |
+| Linux | ARM64 |
+| macOS | x64 (Intel) |
+| macOS | ARM64 (Apple Silicon) |
+
+### Install from VSIX
+
+After downloading the `.vsix` file, install it using one of these methods:
+
+**In VS Code/VSCodium:**
+
+1. Open the Extensions view (`Ctrl+Shift+X` / `Cmd+Shift+X`)
+2. Click the `...` menu button and select **Install from VSIX**
+3. Navigate to the downloaded `.vsix` file and select it
+4. Reload window to complete the installation
+
+**Or via Command Palette:**
+
+1. Press `Ctrl+Shift+P` / `Cmd+Shift+P`
+2. Run **Extensions: Install from VSIX**
+3. Select the downloaded file
+
+**Command Line:**
+
+```bash
+# VS Code
+code --install-extension sailantis.phpthunder-<version>-<os-platform>.vsix
+
+# VSCodium
+codium --install-extension sailantis.phpthunder-<version>-<os-platform>.vsix
+```
+
+_The extension activates automatically when a PHP workspace opens and begins its initial project scan._
 
 ## Configure the PHP interpreter
 
