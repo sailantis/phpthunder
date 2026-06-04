@@ -26,7 +26,7 @@ Follow these steps the first time a PHP project is opened with PhpThunder:
 
 > **Tip:** When the project uses Composer, run `composer install` before opening the folder so `vendor/` symbols are available from the first scan.
 
-![Completion and hover in action](assets/screenshots/autocomplete.gif)
+![Completion and hover in action](assets/screenshots/open-settings-panel.gif)
 
 ## What should appear
 

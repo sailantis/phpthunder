@@ -34,7 +34,7 @@ Use `PhpThunder: Profile Current File` for a quick CLI-style profile of whatever
 
 PhpThunder writes a cachegrind file to `.phpthunder/profiles/` and opens the panel for inspection.
 
-![Profiler panel with call-time breakdown](assets/screenshots/profiler-webview.gif)
+![Profiler panel with call-time breakdown](assets/screenshots/profile-current-file.gif)
 
 ## Start web profiling
 
