@@ -148,17 +148,17 @@ PhpThunder supports:
 - Remote containers and remote SSH sessions
 - Multi-root workspaces with per-folder PHP settings
 
-## Reporting a bug
+## Reporting an issue
 
-The LSP trace log is the most useful artifact when a bug report needs more detail.
+The LSP trace log is the most useful artifact when an issue report needs more detail.
 
 1. Set `phpThunder.trace.server` to `messages` or `verbose` in the workspace settings.
 2. Reproduce the problem.
-3. Open the `PhpThunder Language Server` output channel.
+3. Open the `PhpThunder⚡` output channel.
 4. Copy the relevant portion of the log.
 5. Reset `phpThunder.trace.server` back to `off` when finished.
 
-Useful context for a bug report:
+Useful context for an issue report:
 
 - VS Code version
 - PhpThunder version
