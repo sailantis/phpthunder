@@ -10,9 +10,9 @@ PhpThunder can be installed in two ways:
 
 Install PhpThunder from the VS Code marketplace. When a PHP workspace opens, the extension activates automatically and begins its initial project scan.
 
-### Option 2: Download from GitHub Releases
+### Option 2: Download from Sailantis
 
-You can also download the extension directly from the [PhpThunder releases page](https://github.com/sailantis/phpthunder/releases).
+You can also download the extension directly from the [PhpThunder download page](https://sailantis.com/phpthunder/download).
 
 **Available platforms:**
 
@@ -94,7 +94,7 @@ From the activation page, the flow is:
 - sign in with a Sailantis account to fetch and activate an existing license
 - enter a license key directly when one is already available
 
-![PhpThunder settings panel with activation](assets/screenshots/open-settings-panel.gif)
+![PhpThunder settings panel with activation](assets/screenshots/licence-activation-screen.gif)
 
 ### Status bar states
 
