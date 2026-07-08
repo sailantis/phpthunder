@@ -113,6 +113,14 @@ For the support view of activation edge cases, trial behavior, grace period deta
 
 For pricing and plan details, see the [PhpThunder website](https://sailantis.com/phpthunder).
 
+## Identifying your device
+
+When you open the **License** page, PhpThunder displays a short id of the form `inst-xxxxxxxx` alongside the editor name and version. Use that id when you need to disambiguate installs of PhpThunder on the same machine, for example when multiple VS Code variants are installed side by side.
+
+The short id is also visible on the Sailantis dashboard under **Devices**, so support can match a license row to a specific PhpThunder install without asking for the full fingerprint.
+
+![License screen](assets/screenshots/license-screen.png)
+
 ## Useful configuration commands
 
 | Command                                  | Purpose                                       |

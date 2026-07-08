@@ -51,14 +51,7 @@ For the detailed setup path, including Composer, include paths, and licensing, s
 
 ## When to reindex
 
-Run `PhpThunder: Reindex Workspace` after:
-
-- running `composer install` or `composer update`
-- adding or changing `phpThunder.includePaths`
-- switching the PHP version setting for the folder
-- moving or renaming a large number of files outside the editor
-
-Most single-file changes are picked up automatically. Reindex is for changes that affect the whole project graph.
+Run `PhpThunder: Reindex Workspace` when the project structure changes in ways that the extension is unable to detect automatically. For example, when running `composer install` or `composer update` for long-running operations, or when moving or renaming a large number of files outside the editor. Most changes are picked up automatically. You can also reopen the VS Code window to trigger a reindex.
 
 ## Next steps
 

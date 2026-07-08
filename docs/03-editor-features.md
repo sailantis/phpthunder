@@ -113,12 +113,16 @@ Standard EditorConfig glob patterns are supported (`*`, `**`, `?`, character cla
 
 With a Pro license or active trial, additional style rules can be configured via `phpThunder.formatting.*`:
 
-- **Arrays** — preserve as-is, auto-break on width, force single-line, or force multi-line
+- **Arrays** — preserve, auto, force-single-line, or force-multi-line; also short-array vs array() bracket style
 - **Parameters and arguments** — same four options for function/method definitions and call sites
-- **Match arms** — formatting for `match` expressions
-- **Control structures** — `if`, `foreach`, `for`, `while`, `switch` — choose between brace-style or alternative syntax
+- **Match arms** — formatting for `match` expressions (same four options)
+- **Control structures** — `if`, `elseif`/`else`, `foreach`, `for`, `while`, `switch` — choose between brace-style or colon/alternative syntax
 - **Max inline width** — the threshold at which `auto` mode breaks a single-line construct into multiple lines (default: 80)
-- **Spacing, brace positions, trailing commas, and more**
+- **Brace positions** — class, method, function, namespace, control-flow, and try/catch braces can each be placed on their own line or on the same line as the header
+- **Spacing** — space after casts, inside/outside declaration and call parentheses, after commas, before `:` in return types
+- **Trailing commas** — add or remove trailing commas in multi-line arrays and argument lists
+- **Alignment** — align consecutive `=` assignments, `=>` arrows in arrays/match, inline comments, CSS declarations, and JS properties
+- **Miscellaneous** — `else`/`elseif` on new line, `catch`/`finally` on new line, `case`/`default` indentation, empty body compactness, max consecutive blank lines, and more
 
 See [Project configuration](07-project-configuration.md#formatting) for the full list of customization settings.
 
@@ -134,6 +138,8 @@ Key commands:
 - `PhpThunder: Group TODOs` — switch between grouping by file, type, or priority
 
 This is especially handy in larger codebases where TODOs scatter across dozens of files.
+
+![TODO panel](assets/screenshots/todo-panel.png)
 
 ## Composer helpers
 
