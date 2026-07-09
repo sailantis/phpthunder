@@ -25,6 +25,8 @@ You can also download the extension directly from the [PhpThunder download page]
 | macOS | Intel | darwin-x64 |
 | macOS | Apple Silicon | darwin-arm64 |
 
+> **Note:** The VSIX file name carries the git-tag version (e.g. `2033.1.1-beta.1`), while the Marketplace version embedded in the extension is a separate, derived number. See [Release Versioning](11-release-versioning.md) for the full mapping.
+
 ### Install from VSIX
 
 After downloading the `.vsix` file, install it using one of these methods:
