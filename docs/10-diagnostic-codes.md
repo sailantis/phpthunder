@@ -103,7 +103,7 @@ PhpThunder reports static analysis findings as **diagnostic names** — short Pa
 | `AbstractPrivate`           | `abstract private` is not valid                           |
 | `SelfStaticOutsideClass`    | `self::` / `static::` used outside a class               |
 | `StaticMethodViaInstance`   | Static method called on an instance                       |
-| `ClassNestedInFunction`     | Class declared inside a function                         |
+| `ClassNestedInClosure`     | Class declared inside a closure                         |
 | `InterfaceNestedInFunction` | Interface declared inside a function                    |
 | `TraitNestedInFunction`     | Trait declared inside a function                         |
 | `EnumNestedInFunction`      | Enum declared inside a function                          |
