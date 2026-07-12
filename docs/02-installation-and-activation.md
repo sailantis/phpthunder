@@ -119,7 +119,7 @@ For pricing and plan details, see the [PhpThunder website](https://sailantis.com
 
 When you open the **License** page, PhpThunder displays a short id of the form `inst_xxxxxxxx` alongside the editor name and version. Use that id when you need to disambiguate installs of PhpThunder on the same machine, for example when multiple VS Code variants are installed side by side.
 
-The short id is also visible on the Sailantis dashboard under **Devices**, so support can match a license row to a specific PhpThunder install without asking for the full fingerprint.
+The short id is also visible on the Sailantis dashboard under **Devices**, so support can match a license row to a specific PhpThunder install more easily.
 
 ![License screen](assets/screenshots/license-screen.png)
 
