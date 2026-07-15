@@ -1,6 +1,6 @@
 # PhpThunder Documentation
 
-![PhpThunder Logo](docs/assets/phpthunder-logo-text-banner.svg)
+![PhpThunder Logo](docs/assets/phpthunder-logo-text-opt.svg)
 
 PhpThunder is a PHP language server, debugger, and workflow extension for VS Code. This repository is the canonical markdown source for the long-form product documentation.
 
