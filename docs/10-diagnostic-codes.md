@@ -23,7 +23,7 @@ PhpThunder reports static analysis findings as **diagnostic names** — short Pa
 | `UndefinedVariable`    | Variable has not been assigned before use           |
 | `UnusedVariable`       | Variable is assigned but never read                 |
 | `UndefinedVariableMay` | Variable may be undefined (cross-file)              |
-| `BranchUndefined`      | Variable is defined on some branches only             |
+| `BranchUndefined`      | Variable is defined on some branches only           |
 
 ## Type errors
 
@@ -34,6 +34,7 @@ PhpThunder reports static analysis findings as **diagnostic names** — short Pa
 | `ReturnInNever`       | Function with `never` return type returns a value   |
 | `ReturnValueInVoid`   | Function with `void` return type returns a value    |
 | `MissingReturn`       | Non-void function is missing a return statement     |
+| `ImplicitConversion`  | Implicit scalar conversion (e.g. float to int)      |
 
 ## Unused code
 
@@ -58,6 +59,7 @@ PhpThunder reports static analysis findings as **diagnostic names** — short Pa
 | `GotoLabelUndefined`      | `goto` targets a label that does not exist               |
 | `GotoCrossesBoundary`     | `goto` crosses a function or class boundary              |
 | `ForeachVarReuseCF`      | Foreach value variable is reused (alias of `ForeachVarReuse`) |
+| `TryWithoutCatchOrFinally` | `try` block has no `catch` or `finally` clause (PHP fatal) |
 
 ## Array checks
 
