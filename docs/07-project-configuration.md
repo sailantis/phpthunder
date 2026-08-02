@@ -151,6 +151,7 @@ These accept `preserve`, `force-braces`, or `force-alternative`:
 | `phpThunder.formatting.alignVariableAssignments`   | `true`  | Align consecutive `=` in variable assignments and constants.          |
 | `phpThunder.formatting.alignArrayArrows`           | `true`  | Align consecutive `=>` inside array literals.                         |
 | `phpThunder.formatting.alignMatchArrows`           | `true`  | Align consecutive `=>` inside `match` expressions.                    |
+| `phpThunder.formatting.alignPropertyHooks`         | `true`  | Align consecutive `=>` inside PHP 8.4 property hook blocks.           |
 | `phpThunder.formatting.alignCSSDeclarations`      | `true`  | Align consecutive CSS declarations (`property: value;`) in `<style>` blocks. |
 | `phpThunder.formatting.alignJSObjectProperties`    | `true`  | Align consecutive `:` in JS object literals inside `<script>` blocks.  |
 | `phpThunder.formatting.alignJSVariableAssignments` | `true`  | Align consecutive `=` in JS variable assignments inside `<script>` blocks. |
