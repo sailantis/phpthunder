@@ -148,7 +148,7 @@ These accept `preserve`, `force-braces`, or `force-alternative`:
 | Setting                                            | Default | What it controls                                                      |
 | -------------------------------------------------- | ------- | --------------------------------------------------------------------- |
 | `phpThunder.formatting.alignConsecutiveInlineComments` | `true` | Align consecutive `//` comments to the same column.                  |
-| `phpThunder.formatting.alignVariableAssignments`   | `true`  | Align consecutive `=` in variable assignments and constants.          |
+| `phpThunder.formatting.alignVariableAssignments`   | `true`  | Align consecutive `=` in variable assignments and constants. Assignments are grouped by their receiver/base expression (gofmt-style): `$a['x']`/`$a['y']` and `$o->p`/`$o->q` align together, but a bare variable does not align with a property/array access. Within a group, gofmt's size-ratio heuristic decides the breaks (keys within 2.5× of the running geometric mean stay aligned; keys ≤ 40 wide always align).          |
 | `phpThunder.formatting.alignArrayArrows`           | `true`  | Align consecutive `=>` inside array literals.                         |
 | `phpThunder.formatting.alignMatchArrows`           | `true`  | Align consecutive `=>` inside `match` expressions.                    |
 | `phpThunder.formatting.alignPropertyHooks`         | `true`  | Align consecutive `=>` inside PHP 8.4 property hook blocks.           |

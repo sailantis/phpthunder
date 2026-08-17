@@ -43,7 +43,20 @@ Hover also reflects alias-expanded PHPDoc types and inferred callback parameter 
 
 When a short class name cannot be resolved, PhpThunder offers to add the missing `use` statement. When multiple candidates exist (e.g., both `App\Request` and `Illuminate\Http\Request`), it shows a picker.
 
-> **Tip:** `PhpThunder: Organize Imports` removes unused `use` statements and sorts the remaining ones. Bind it to a key or run it as a source action on save.
+### Organize Imports
+
+`PhpThunder: Organize Imports` removes unused `use` statements and sorts the remaining ones alphabetically by fully-qualified name (aliases are preserved). It is available from:
+
+- **Command palette** — run `PhpThunder: Organize Imports` (also in the editor context menu on a PHP file).
+- **Lightbulb / `Ctrl+.`** — the `Organize Imports` source action appears in the code-action menu.
+- **On save** — configure it in your `settings.json`:
+  ```json
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  }
+  ```
+
+> **Tip:** Bind `PhpThunder: Organize Imports` to a keybinding for a one-shot sort-and-prune of the current file's imports.
 
 ## Diagnostics and quick fixes
 
