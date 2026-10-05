@@ -16,14 +16,14 @@ You can also download the extension directly from the [PhpThunder download page]
 
 **Available platforms:**
 
-| OS | Platform | Platform ID |
-|----------|------|------------------|
-| Windows | x64 | win32-x64 |
-| Windows | arm64 | win32-arm64 |
-| Linux | x64 | linux-x64 |
-| Linux | arm64 | linux-arm64 |
-| macOS | Intel | darwin-x64 |
-| macOS | Apple Silicon | darwin-arm64 |
+| OS      | Platform      | Platform ID  |
+| ------- | ------------- | ------------ |
+| Windows | x64           | win32-x64    |
+| Windows | arm64         | win32-arm64  |
+| Linux   | x64           | linux-x64    |
+| Linux   | arm64         | linux-arm64  |
+| macOS   | Intel         | darwin-x64   |
+| macOS   | Apple Silicon | darwin-arm64 |
 
 > **Note:** The VSIX file name carries the git-tag version (e.g. `2033.1.1-beta.1`), while the Marketplace version embedded in the extension is a separate, derived number. See [Release Versioning](11-release-versioning.md) for the full mapping.
 
@@ -85,6 +85,22 @@ PhpThunder exposes dedicated commands for project infrastructure:
 
 `phpThunder.includePaths` accepts additional directories to index. Paths from the global, workspace, and folder scopes are merged for each project. After changing include paths, run `PhpThunder: Reindex Workspace` or reload the VS Code window.
 
+## Workspace statistics
+
+The **Workspace** page in the settings panel shows what PhpThunder currently holds in memory for the open workspace. It is available on every tier — no Pro license is required.
+
+For each open project it reports:
+
+- **Indexed files** and **symbols**, broken down by index layer (project, `vendor/`, bundled stubs, include-path stubs) and by declaration kind (classes, interfaces, traits, enums, functions, methods, properties, constants)
+- **Reference edges** and **type-cache entries**
+- **Diagnostics** by severity and the number of files they span
+- **TODO** markers
+- The **PHP version** in use, whether the last scan was a **warm or cold start**, and how long the scan took and how many files it had to re-parse
+
+Below the per-project cards the page shows the language server's process heap (`Alloc`, `HeapInuse`, `HeapSys`, `Sys`, and GC cycles). These memory figures cover the whole language server, including all open projects and their vendor and stub indexes — they are not attributed per project.
+
+The counts refresh roughly every four seconds, but only while the Workspace page is on screen and the settings tab is not backgrounded. The polling only reads existing state, so it does not trigger re-indexing or slow down analysis.
+
 ## Activate a Pro license
 
 PhpThunder offers a free tier, a 30-day Pro trial, and ongoing Pro access. The trial starts automatically when the extension is first installed — no action required.
@@ -131,7 +147,7 @@ The short id is also visible on the Sailantis dashboard under **Devices**, so su
 | `PhpThunder: Select PHP Version`         | Set the language level for the current folder |
 | `PhpThunder: Configure Composer`         | Customize Composer binary resolution          |
 | `PhpThunder: Configure Include Paths`    | Add extra source directories to the index     |
-| `PhpThunder: Activate Pro`                      | Activate a Pro license                        |
+| `PhpThunder: Activate Pro`               | Activate a Pro license                        |
 
 ## Next steps
 
