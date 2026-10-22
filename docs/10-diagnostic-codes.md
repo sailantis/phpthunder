@@ -22,6 +22,7 @@ These are code PHP refuses to load, or that raises an `Error` as soon as the con
 | `InvalidMemberType`   | `void`/`never`/`callable`/`mixed` used illegally in a type position    |
 | `ParentWithoutParent` | `parent::` in a class scope whose class has no parent                  |
 | `UnhandledMatch`      | `match` with no `default` arm that cannot cover every subject value    |
+| `EnumMagicMethod`     | Magic method an enum may not declare (`Enum E cannot include ...`)     |
 
 Two deliberate non-reports keep this group free of false positives:
 
@@ -125,6 +126,7 @@ A match on a literal-valued subject such as `match($s)` with `$s` a `string` is 
 | `RemovedUsage`          | Symbol has been removed in the target PHP version |
 | `VersionRequirement`    | Feature requires a different PHP version          |
 | `DeprecatedDeclaration` | Declaration itself is deprecated                  |
+| `DeprecatedSyntax`      | Language construct deprecated as of the target PHP version |
 
 ## Style
 

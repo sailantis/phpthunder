@@ -141,7 +141,7 @@ Plan limits still apply to seats and machine count. For current pricing and plan
 
 PhpThunder supports:
 
-- PHP 5.6 through 8.5
+- PHP 5.6 through 8.6
 - Windows, macOS, and Linux
 - VS Code 1.82.0 or later
 - WSL via the Remote - WSL extension
