@@ -60,14 +60,29 @@ PhpThunder offers a **30-day Pro trial** — full access to every Pro feature. T
 
 The status bar shows your current state:
 
-| Status             | Meaning                                                           |
-| ------------------ | ----------------------------------------------------------------- |
-| `PHP Free`         | Base features only                                                |
-| `PHP Trial`        | Full Pro access during the trial period                           |
-| `PHP Pro`          | Active Pro license                                                |
-| `PHP Grace Period` | License recently expired; Pro features stay available temporarily |
+| Status                | Meaning                                                           |
+| --------------------- | ----------------------------------------------------------------- |
+| `PHP⚡ Free`          | Base features only                                                |
+| `PHP⚡ Trial`         | Full Pro access during the trial period                           |
+| `PHP⚡ Pro`           | Active license, updates included                                  |
+| `PHP⚡ Perpetual <v>` | Updates window ended; you keep the version `<v>` you own          |
+| `PHP⚡ Grace Period`  | License lease recently lapsed; Pro features stay available temporarily |
 
-For pricing plans and subscription details, visit [sailantis.com](https://sailantis.com).
+## Pricing
+
+A license is a **one-time purchase**. There is no subscription and no recurring charge.
+
+| Licenses | Price each | Order |
+| -------- | ---------- | ----- |
+| 1 – 9    | $5.00      | $5 – $45 |
+| 10 – 29  | $4.00      | $40 – $116 |
+| 30+      | $3.00      | $90+ |
+
+A purchase includes **12 months of updates**. You own the version that was current when you bought it, plus every release published during those 12 months — permanently.
+
+When the 12 months are over nothing stops working: you keep the newest release published inside your window and continue to run it on the devices you have activated. Only releases published *after* your window closed require extending your updates, which costs the same as buying again ($5 / $4 / $3 per license, priced on how many licenses you hold).
+
+Prices are in US dollars and exclude any tax that applies at your billing address. See [sailantis.com/phpthunder](https://sailantis.com/phpthunder) for the full price list and the [FAQ](https://sailantis.com/phpthunder/faq) for how ownership, extensions, and the optional automatic renewal work.
 
 ## Related guides
 

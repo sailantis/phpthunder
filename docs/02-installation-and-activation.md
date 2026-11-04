@@ -118,18 +118,19 @@ From the activation page, the flow is:
 
 The status bar entry shows the current access level at a glance:
 
-| Status bar shows   | What it means                                                       |
-| ------------------ | ------------------------------------------------------------------- |
-| `PHP Free`         | Base features only; no trial active                                 |
-| `PHP Trial`        | Full Pro access for the trial period                                |
-| `PHP Pro`          | Active Pro license                                                  |
-| `PHP Grace Period` | License recently expired; Pro features remain available temporarily |
+| Status bar shows      | What it means                                                       |
+| --------------------- | ------------------------------------------------------------------- |
+| `PHP⚡ Free`          | Base features only; no trial active                                 |
+| `PHP⚡ Trial`         | Full Pro access for the trial period                                |
+| `PHP⚡ Pro`           | Active license, updates included                                    |
+| `PHP⚡ Perpetual <v>` | Updates window ended; you keep using version `<v>`, which you own    |
+| `PHP⚡ Grace Period`  | License lease recently lapsed; Pro features remain available temporarily |
 
-If a Pro license lapses, PhpThunder enters Grace Period instead of blocking Pro features immediately. Reactivate or renew from `PhpThunder: Activate Pro`.
+A license does not expire — a purchase includes 12 months of updates and you keep the version you own afterwards. If the license *lease* lapses (for example because the machine was offline for a long time), PhpThunder enters Grace Period instead of blocking Pro features immediately. Re-activate from `PhpThunder: Activate Pro`.
 
 For the support view of activation edge cases, trial behavior, grace period details, and compatibility notes, see [Troubleshooting](09-troubleshooting.md#activation-trial-and-license-state).
 
-For pricing and plan details, see the [PhpThunder website](https://sailantis.com/phpthunder).
+For pricing and license details, see the [PhpThunder website](https://sailantis.com/phpthunder).
 
 ## Identifying your device
 

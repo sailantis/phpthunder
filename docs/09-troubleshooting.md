@@ -126,16 +126,17 @@ To activate a Pro license, run `PhpThunder: Activate Pro`. From the activation p
 
 The status bar entry shows the current access level:
 
-| Status bar shows   | What it means                                                       |
-| ------------------ | ------------------------------------------------------------------- |
-| `PHP Free`         | Base features only; no trial active                                 |
-| `PHP Trial`        | Full Pro access for the trial period                                |
-| `PHP Pro`          | Active Pro license                                                  |
-| `PHP Grace Period` | License recently expired; Pro features remain available temporarily |
+| Status bar shows      | What it means                                                       |
+| --------------------- | ------------------------------------------------------------------- |
+| `PHP⚡ Free`          | Base features only; no trial active                                 |
+| `PHP⚡ Trial`         | Full Pro access for the trial period                                |
+| `PHP⚡ Pro`           | Active license, updates included                                    |
+| `PHP⚡ Perpetual <v>` | Updates window ended; you keep using version `<v>`, which you own    |
+| `PHP⚡ Grace Period`  | License lease recently lapsed; Pro features remain available temporarily |
 
-If a Pro license lapses, PhpThunder enters Grace Period instead of blocking Pro features immediately. Reactivate or renew from `PhpThunder: Activate Pro`.
+A license does not expire — a purchase includes 12 months of updates and you keep the version you own afterwards. If the license *lease* lapses (for example because the machine was offline for a long time), PhpThunder enters Grace Period instead of blocking Pro features immediately. Re-activate from `PhpThunder: Activate Pro`.
 
-Plan limits still apply to seats and machine count. For current pricing and plan details, see the [Sailantis website](https://sailantis.com).
+Plan limits still apply to licensed machines. Extending your updates window is an ordinary purchase at the same per-license price. For current pricing, see the [Sailantis website](https://sailantis.com/phpthunder).
 
 ## Compatibility
 
