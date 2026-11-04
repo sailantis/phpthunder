@@ -78,9 +78,11 @@ A license is a **one-time purchase**. There is no subscription and no recurring 
 | 10 – 29  | $4.00      | $40 – $116 |
 | 30+      | $3.00      | $90+ |
 
-A purchase includes **12 months of updates**. You own the version that was current when you bought it, plus every release published during those 12 months — permanently.
+A purchase includes **12 months of updates**. You own the version that was current when you bought it, plus **every release published during those 12 months** — permanently. That covers updates to your version as well as any newer version line released in that year.
 
 When the 12 months are over nothing stops working: you keep the newest release published inside your window and continue to run it on the devices you have activated. Only releases published *after* your window closed require extending your updates, which costs the same as buying again ($5 / $4 / $3 per license, priced on how many licenses you hold).
+
+Because VS Code updates extensions automatically, a version that installs after your window has closed falls outside your license. Pin the extension to the version you own, or extend your updates.
 
 Prices are in US dollars and exclude any tax that applies at your billing address. See [sailantis.com/phpthunder](https://sailantis.com/phpthunder) for the full price list and the [FAQ](https://sailantis.com/phpthunder/faq) for how ownership, extensions, and the optional automatic renewal work.
 
