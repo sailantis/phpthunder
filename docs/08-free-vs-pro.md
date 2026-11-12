@@ -30,6 +30,7 @@ These workflows unlock with Pro access or an active trial:
 | **Generate Getter / Setter**        | Creates typed accessor methods for properties without writing boilerplate.                                                                        |
 | **Generate missing accessors**      | Scans a class and fills in all missing getters and setters in one action.                                                                         |
 | **Implement Missing Methods**       | Generates stubs for all abstract and interface methods a class is required to implement.                                                          |
+| **New PHP Element**                 | Creates a class, interface, or trait from the Explorer context menu, with a PSR-4-aware namespace and a live file preview.                        |
 | **Pro code fixes (CF diagnostics)** | A set of extra quick fixes beyond the free tier that fix code-quality patterns automatically.                                                     |
 | **Formatting style customization**  | Controls array layout, parameter style, brace positions, spacing, and more via `phpThunder.formatting.*` settings.                               |
 | **Profile Current File**            | Captures a Xdebug cachegrind profile for the active PHP script in one command.                                                                    |
@@ -52,6 +53,7 @@ Pro also adds **starred completion suggestions** — the strongest match is pre-
 | Rename Symbol                    |      | ✓                       |
 | Accessor generation              |      | ✓                       |
 | Implement Missing Methods        |      | ✓                       |
+| New PHP Element                  |      | ✓                       |
 | Profiling (CLI & web)            |      | ✓                       |
 
 ## Trial and activation

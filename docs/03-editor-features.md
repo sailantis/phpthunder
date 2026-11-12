@@ -9,6 +9,7 @@ PhpThunder is first and foremost an editing toolchain. This page covers the work
 | Code intelligence            | Completion, hover, go-to-definition, find references, import suggestions, and PHPDoc-aware inference |
 | Diagnostics                  | Parse errors, type problems, version mismatches, array-shape key issues, unused code                 |
 | Quick fixes & source actions | Organize imports, generate PHPDoc, add use statements, remove dead code                              |
+| Code generation (Pro)        | Accessor generation, implementing missing methods, and scaffolding new classes/interfaces/traits     |
 | Formatting                   | PSR-12 by default; EditorConfig and VS Code settings honored; Pro adds style customization           |
 | TODO panel                   | Track and navigate `TODO`, `FIXME`, and similar comments project-wide                                |
 | Composer helpers             | Run install, update, require, and dump-autoload from the command palette                             |
@@ -96,6 +97,22 @@ PhpThunder can generate boilerplate:
 These are available as quick fixes (💡) directly on the class or property.
 
 ![Generating abstract methods](assets/screenshots/generate-abstract-methods.gif)
+
+### New PHP elements
+
+Right-click a folder (or a file, to create next to it) in the Explorer and pick
+**New PHP Element…**. The submenu offers **Class**, **Interface**, and **Trait**
+directly, and the form itself lets you switch between them. It collects:
+
+- the **name**, validated against PHP's identifier rules and reserved keywords
+- the **namespace**, prefilled from the folder's PSR-4 mapping in `composer.json`
+  (falling back to the folder layout, with a leading `src`/`lib` dropped)
+- an optional **`declare(strict_types=1);`** line
+
+A live preview shows the exact file that will be written, so the namespace and
+declaration are verifiable before anything touches disk. The file is created in
+the selected folder, existing files are never overwritten, and the new document
+opens with the caret after the opening brace.
 
 ## Formatting
 
