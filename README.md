@@ -1,10 +1,8 @@
-# PhpThunder Documentation
+![PhpThunder Logo](docs/assets/phpthunder-logo-text-banner.svg)
 
-![PhpThunder Logo](docs/assets/phpthunder-logo-text-opt.svg)
-
-PhpThunder is a PHP language server, debugger, and workflow extension for VS Code. It combines code intelligence, diagnostics, formatting, tests, debugging, Composer workflows, and a built-in profiler in a single extension.
-
-This repository is the canonical markdown source for the long-form product documentation.
+<h3 align="center" style="font-size: 1.2em;">
+    PhpThunder is a PHP language server, debugger, and workflow extension for VS Code. It combines code intelligence, diagnostics, formatting, tests, debugging, Composer workflows, and a built-in profiler in a single extension.
+</h3>
 
 ## Highlights
 
@@ -12,7 +10,7 @@ This repository is the canonical markdown source for the long-form product docum
 
 Context-aware completion, PHPDoc-aware hover, go-to-definition, find references, and import assistance. PhpThunder understands templates, array shapes, callable signatures, conditional return types, magic methods, fluent APIs, and type aliases — and inlay hints show inferred parameter names and return types inline.
 
-![Hover](docs/assets/screenshots/hover.gif)
+![Hover](docs/assets/screenshots/v2/hover.png)
 
 → [Editor features](docs/03-editor-features.md)
 
@@ -20,7 +18,7 @@ Context-aware completion, PHPDoc-aware hover, go-to-definition, find references,
 
 Inline diagnostics for parse errors, type mismatches, array-shape key problems, unused imports, unused private members, and unreachable code. Quick fixes generate abstract methods, add missing imports, and apply type fixes.
 
-![Generate abstract methods](docs/assets/screenshots/generate-abstract-methods.gif)
+![Generate abstract methods](docs/assets/screenshots/v2/generate-abstract-methods.gif)
 
 → [Diagnostic codes](docs/10-diagnostic-codes.md)
 
@@ -28,7 +26,7 @@ Inline diagnostics for parse errors, type mismatches, array-shape key problems, 
 
 Xdebug-based debugging for CLI scripts, web requests, and attach mode, with full VS Code debug adapter support: breakpoints, conditional breakpoints, watch expressions, call stack, and variable inspection.
 
-![Start web debugger](docs/assets/screenshots/start-web-debugger.gif)
+![Start web debugger](docs/assets/screenshots/v2/start-web-debugger.gif)
 
 → [Debugging](docs/04-debugging.md)
 
@@ -36,7 +34,7 @@ Xdebug-based debugging for CLI scripts, web requests, and attach mode, with full
 
 Profile any PHP file directly from the editor. The profiler panel visualizes execution time, call counts, and hotspots as a flame graph.
 
-![Profile current file](docs/assets/screenshots/profile-current-file.gif)
+![Profile current file](docs/assets/screenshots/v2/profile-current-file.gif)
 
 → [Profiling](docs/05-profiling.md)
 

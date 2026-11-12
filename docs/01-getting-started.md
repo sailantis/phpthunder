@@ -26,7 +26,7 @@ Follow these steps the first time a PHP project is opened with PhpThunder:
 
 > **Tip:** When the project uses Composer, run `composer install` before opening the folder so `vendor/` symbols are available from the first scan.
 
-![Completion and hover in action](assets/screenshots/open-settings-panel.gif)
+![Completion and hover in action](assets/screenshots/v2/open-settings-panel.gif)
 
 ## What should appear
 
@@ -35,11 +35,10 @@ Once the initial index is complete, the editor should show:
 - **Completion** for classes, functions, constants, members, imported namespaces, and PHPDoc-backed types such as templates, array shapes, aliases, and callback parameters
 - **Hover documentation** for symbols and inferred types, including PHPDoc from dependencies and higher-order callback inference
 - **Diagnostics** for syntax errors, type mismatches, array-shape key issues, and selected PHPDoc issues
- - **Import assistance** that suggests and inserts `use` statements for unresolved short names
- - **Test Explorer entries** when PHPUnit or Pest tests exist in the standard locations
- - **Todo treeview** that displays project-specific Todo items and related quick actions
- - **A status-bar entry** showing the current access state (Free, Trial, or Pro)
-
+- **Import assistance** that suggests and inserts `use` statements for unresolved short names
+- **Test Explorer entries** when PHPUnit or Pest tests exist in the standard locations
+- **Todo treeview** that displays project-specific Todo items and related quick actions
+- **A status-bar entry** showing the current access state (Free, Trial, or Pro)
 
 ## Commands worth memorizing
 

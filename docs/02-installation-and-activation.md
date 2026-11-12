@@ -112,21 +112,21 @@ From the activation page, the flow is:
 - sign in with a Sailantis account to fetch and activate an existing license
 - enter a license key directly when one is already available
 
-![PhpThunder settings panel with activation](assets/screenshots/licence-activation-screen.gif)
+![PhpThunder settings panel with activation](assets/screenshots/v2/licence-activation-screen.png)
 
 ### Status bar states
 
 The status bar entry shows the current access level at a glance:
 
-| Status bar shows      | What it means                                                       |
-| --------------------- | ------------------------------------------------------------------- |
-| `PHP⚡ Free`          | Base features only; no trial active                                 |
-| `PHP⚡ Trial`         | Full Pro access for the trial period                                |
-| `PHP⚡ Pro`           | Active license, updates included                                    |
-| `PHP⚡ Perpetual <v>` | Updates window ended; you keep using version `<v>`, which you own    |
+| Status bar shows      | What it means                                                            |
+| --------------------- | ------------------------------------------------------------------------ |
+| `PHP⚡ Free`          | Base features only; no trial active                                      |
+| `PHP⚡ Trial`         | Full Pro access for the trial period                                     |
+| `PHP⚡ Pro`           | Active license, updates included                                         |
+| `PHP⚡ Perpetual <v>` | Updates window ended; you keep using version `<v>`, which you own        |
 | `PHP⚡ Grace Period`  | License lease recently lapsed; Pro features remain available temporarily |
 
-A license does not expire — a purchase includes 12 months of updates and you keep the version you own afterwards. If the license *lease* lapses (for example because the machine was offline for a long time), PhpThunder enters Grace Period instead of blocking Pro features immediately. Re-activate from `PhpThunder: Activate Pro`.
+A license does not expire — a purchase includes 12 months of updates and you keep the version you own afterwards. If the license _lease_ lapses (for example because the machine was offline for a long time), PhpThunder enters Grace Period instead of blocking Pro features immediately. Re-activate from `PhpThunder: Activate Pro`.
 
 For the support view of activation edge cases, trial behavior, grace period details, and compatibility notes, see [Troubleshooting](09-troubleshooting.md#activation-trial-and-license-state).
 
@@ -138,7 +138,7 @@ When you open the **License** page, PhpThunder displays a short id of the form `
 
 The short id is also visible on the Sailantis dashboard under **Devices**, so support can match a license row to a specific PhpThunder install more easily.
 
-![License screen](assets/screenshots/license-screen.png)
+![License screen](assets/screenshots/v2/assets/screenshots/v2/.png)
 
 ## Useful configuration commands
 

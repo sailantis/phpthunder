@@ -26,7 +26,7 @@ PhpThunder also understands PHPDoc templates, array shapes, callable signatures,
 
 > **Example:** Start typing `new Http` in a Laravel project and PhpThunder completes to `Illuminate\Http\Request`, adding the `use` statement at the top of the file if it's not already there.
 
-![Completion with auto-import](assets/screenshots/autocomplete.gif)
+![Completion with auto-import](assets/screenshots/v2/completion.png)
 
 ### Hover
 
@@ -34,7 +34,7 @@ Hover over any symbol to see its type signature, return type, parameters, and PH
 
 Hover also reflects alias-expanded PHPDoc types and inferred callback parameter types, so higher-order code keeps the same type detail as direct member access.
 
-![Hover documentation on a method](assets/screenshots/hover.gif)
+![Hover documentation on a method](assets/screenshots/v2/hover.png)
 
 ### Go to definition and find references
 
@@ -84,7 +84,7 @@ Quick fixes and source actions are available from the lightbulb (💡) or via `C
 
 `F2` on any symbol triggers a workspace-wide rename that updates every reference: the declaration, all usages, and any qualified references in other files.
 
-![Renaming a class](assets/screenshots/rename-a-class.gif)
+![Renaming a class](assets/screenshots/v2/rename-a-class.gif)
 
 ## Code generation (Pro)
 
@@ -96,7 +96,7 @@ PhpThunder can generate boilerplate:
 
 These are available as quick fixes (💡) directly on the class or property.
 
-![Generating abstract methods](assets/screenshots/generate-abstract-methods.gif)
+![Generating abstract methods](assets/screenshots/v2/generate-abstract-methods.gif)
 
 ### New PHP elements
 
@@ -169,7 +169,7 @@ Key commands:
 
 This is especially handy in larger codebases where TODOs scatter across dozens of files.
 
-![TODO panel](assets/screenshots/todo-panel.png)
+![TODO panel](assets/screenshots/v2/todo-panel.png)
 
 ## Composer helpers
 

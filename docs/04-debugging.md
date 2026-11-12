@@ -24,7 +24,7 @@ The debug type for all launch configurations is `phpThunder`.
 
 That is the whole flow for local CLI scripts. Web and remote scenarios add a few more settings but follow the same idea.
 
-![Active debug session with inline values](assets/screenshots/web-debugger.gif)
+![Active debug session with inline values](assets/screenshots/v2/start-web-debugger.gif)
 
 ## Debug modes
 
@@ -102,6 +102,8 @@ When `mode` is `"web"`, the nested `server` object controls the local HTTP serve
 | `urlPath`     | Request path to open after the server starts    |
 | `webPort`     | Preferred HTTP port                             |
 | `openBrowser` | `"external"`, `"webview"`, `"ask"`, or `false`  |
+
+With `openBrowser` set to `"webview"` (or when you pick **Open in Webview** from the prompt), the server opens in an integrated panel instead of your browser. The panel's toolbar has an editable address bar, a **Go** button, **Reload**, and **Open External**: change the URL and press <kbd>Enter</kbd> (or click **Go**) to request another route of the same server without restarting the session, and press <kbd>Esc</kbd> to discard an edit. A full URL is used as typed, a path such as `/admin/index.php` is resolved against the server's root, and `localhost:9000/foo` is treated as an absolute address. Only `http://` and `https://` URLs are loaded. A link followed inside the page navigates the preview but does not update the address bar, which keeps showing the URL that was last requested — **Reload** returns there.
 
 Web mode is a good fit for framework entry points, route testing, or any workflow where a browser request drives the execution path.
 
