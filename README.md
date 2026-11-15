@@ -18,7 +18,7 @@ Context-aware completion, PHPDoc-aware hover, go-to-definition, find references,
 
 Inline diagnostics for parse errors, type mismatches, array-shape key problems, unused imports, unused private members, and unreachable code. Quick fixes generate abstract methods, add missing imports, and apply type fixes.
 
-![Generate abstract methods](docs/assets/screenshots/v2/generate-abstract-methods.gif)
+![Generate abstract methods](docs/assets/screenshots/v2/generate-class-methods.webp)
 
 → [Diagnostic codes](docs/10-diagnostic-codes.md)
 
@@ -34,7 +34,7 @@ Xdebug-based debugging for CLI scripts, web requests, and attach mode, with full
 
 Profile any PHP file directly from the editor. The profiler panel visualizes execution time, call counts, and hotspots as a flame graph.
 
-![Profile current file](docs/assets/screenshots/v2/profile-current-file.gif)
+![Profile current file](docs/assets/screenshots/v2/start-web-profiler.webp)
 
 → [Profiling](docs/05-profiling.md)
 

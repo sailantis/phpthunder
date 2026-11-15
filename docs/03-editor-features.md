@@ -96,7 +96,7 @@ PhpThunder can generate boilerplate:
 
 These are available as quick fixes (💡) directly on the class or property.
 
-![Generating abstract methods](assets/screenshots/v2/generate-abstract-methods.gif)
+![Generating abstract methods](assets/screenshots/v2/generate-class-methods.webp)
 
 ### New PHP elements
 
